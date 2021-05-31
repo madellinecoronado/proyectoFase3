@@ -20,7 +20,7 @@
             <Insets left="10.0" />
          </padding>
          <children>
-            <TextField promptText="Usuario" style="-fx-background-color: transparent;" />
+            <TextField fx:id="txtUser" promptText="Usuario" style="-fx-background-color: transparent;" />
          </children>
       </HBox>
       <Label layoutX="16.0" layoutY="163.0" text="Contraseña:">
@@ -33,7 +33,7 @@
             <Insets left="10.0" />
          </padding>
          <children>
-            <TextField promptText="Contraseña" style="-fx-background-color: transparent;" />
+            <TextField fx:id="txtPass" promptText="Contraseña" style="-fx-background-color: transparent;" />
          </children>
       </HBox>
       <Button fx:id="btnIngresar" layoutX="261.0" layoutY="246.0" mnemonicParsing="false" onAction="#ingresarOpciones" text="INGRESAR" />
