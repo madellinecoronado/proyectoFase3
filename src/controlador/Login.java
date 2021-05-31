@@ -19,13 +19,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 public class Login implements Initializable {
     
     @FXML
     private Button btnIngresar;
+    @FXML
+    private TextField txtUser;
+    @FXML
+    private TextField txtPass;
+    private Label lblStatus;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -35,8 +42,27 @@ public class Login implements Initializable {
     }    
     
     @FXML
-    private void ingresarOpciones (ActionEvent event){
-         try {
+    private void ingresarOpciones (ActionEvent event) throws Exception{
+        
+        if (txtUser.getText().equals("admin") && txtPass.getText().equals("admin")){
+            lblStatus.setText("Exito");
+           Stage stage = new Stage();
+             Parent root = FXMLLoader.load(getClass().getResource("/vista/Opciones.fxml"));
+        
+        Scene scene = new Scene(root);
+        
+        stage.setScene(scene);
+        stage.show();
+        } else{
+             Stage stage = new Stage();
+             Parent root = FXMLLoader.load(getClass().getResource("/vista/Error.fxml"));
+        
+        Scene scene = new Scene(root);
+        
+        stage.setScene(scene);
+        stage.show();
+        }
+         /*try {
             // Cargo la vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/Opciones.fxml"));
 
@@ -63,7 +89,7 @@ public class Login implements Initializable {
 
         } catch (IOException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }*/
     }
     
 
