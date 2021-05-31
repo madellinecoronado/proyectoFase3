@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="757.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.DispositivosController">
+   <tabs>
+      <Tab text="Dispositivos">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="667.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Gestor Dispositivos">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="9.0" layoutY="40.0" prefHeight="259.0" prefWidth="734.0">
+                    <columns>
+                      <TableColumn prefWidth="105.0" text="Identificador" />
+                      <TableColumn prefWidth="121.0" text="Tipo" />
+                        <TableColumn prefWidth="114.0" text="Nombre" />
+                        <TableColumn prefWidth="165.0" text="Correo Electrónico" />
+                        <TableColumn prefWidth="139.0" text="Estado" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnCrearDispositivo" layoutX="14.0" layoutY="316.0" mnemonicParsing="false" onAction="#crearDispositivo" text="Crear dispositivo" />
+                  <Button fx:id="btnCargaMasiva" layoutX="410.0" layoutY="316.0" mnemonicParsing="false" onAction="#cargaMasiva" text="Carga masiva dispositivos" />
+                  <Button fx:id="btnEliminarDispositivo" layoutX="140.0" layoutY="316.0" mnemonicParsing="false" onAction="#eliminarDispositivo" text="Eliminar dispositivo" />
+                  <Button fx:id="btnCargaAdministracion" layoutX="575.0" layoutY="316.0" mnemonicParsing="false" onAction="#cargaMasivaAdministracion" text="Carga masiva administración" />
+                  <Button fx:id="btnEditarDispositivo" layoutX="282.0" layoutY="316.0" mnemonicParsing="false" onAction="#editarDispositivo" text="Editar dispositivo" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+   <contextMenu>
+      <ContextMenu>
+         <items>
+            <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+         </items>
+      </ContextMenu>
+   </contextMenu>
+</TabPane>

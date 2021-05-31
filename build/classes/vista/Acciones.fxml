@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AccionesController">
+   <children>
+      <Label layoutX="23.0" layoutY="24.0" text="Acciones">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="67.0" text="Tipo: Computadora portátil">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="292.0" layoutY="404.0" mnemonicParsing="false" text="Cerrar" />
+      <Button layoutX="489.0" layoutY="416.0" mnemonicParsing="false" text="Carga masiva" />
+      <CubicCurve controlX1="-18.0" controlX2="199.0" controlY1="-253.0" controlY2="-253.0" endX="350.0" endY="-253.0" fill="DODGERBLUE" layoutX="221.0" layoutY="354.0" startX="-202.0" startY="-253.0" stroke="BLACK" />
+      <Label layoutX="350.0" layoutY="67.0" text="Nombre: Mi_Laptop_01">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="109.0" text="Click sobre la acción que desea realizar con este dispositivo:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnTomarFotografia" layoutX="44.0" layoutY="159.0" mnemonicParsing="false" onAction="#tomarFotografia" prefHeight="25.0" prefWidth="139.0" text="Tomar fotografía" />
+      <Button fx:id="btnPegarTexto" layoutX="44.0" layoutY="237.0" mnemonicParsing="false" onAction="#pegarTexto" prefHeight="25.0" prefWidth="139.0" text="Pegar texto" />
+      <Button fx:id="btnReproducirMusica" layoutX="43.0" layoutY="315.0" mnemonicParsing="false" onAction="#reproducirMusica" prefHeight="25.0" prefWidth="139.0" text="Reproducir música" />
+      <Button fx:id="btnCopiarTexto" layoutX="44.0" layoutY="196.0" mnemonicParsing="false" onAction="#copiarTexto" prefHeight="25.0" prefWidth="139.0" text="Copiar texto" />
+      <Button fx:id="btnCompartirDoc" layoutX="43.0" layoutY="275.0" mnemonicParsing="false" onAction="#compartirDocumentos" text="Compartir documentos" />
+      <Button fx:id="btnRecibirDocs" layoutX="44.0" layoutY="357.0" mnemonicParsing="false" onAction="#recibirDocumentos" prefHeight="25.0" prefWidth="139.0" text="Recibir documentos" />
+      <Button fx:id="btnRecibirLlamada" layoutX="393.0" layoutY="157.0" mnemonicParsing="false" onAction="#recibirLlamada" prefHeight="25.0" prefWidth="139.0" text="Recibir llamada" />
+      <Button fx:id="btnVerNotificaciones" layoutX="393.0" layoutY="235.0" mnemonicParsing="false" onAction="#verNotificaciones" prefHeight="25.0" prefWidth="139.0" text="Ver notificaciones" />
+      <Button fx:id="btnVerMensajes" layoutX="393.0" layoutY="194.0" mnemonicParsing="false" onAction="#verMensajes" prefHeight="25.0" prefWidth="139.0" text="Ver mensajes." />
+   </children>
+</Pane>

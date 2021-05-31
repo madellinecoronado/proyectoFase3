@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CargaMasivaController">
+   <children>
+      <Button layoutX="148.0" layoutY="367.0" mnemonicParsing="false" text="Procesar un Dispositivo" />
+      <Button layoutX="305.0" layoutY="367.0" mnemonicParsing="false" text="Procesar todos los Dispositivos " />
+      <Text layoutX="43.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carga Masiva de Dispositivos" wrappingWidth="286.154296875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="19.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/cp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="44.0" layoutX="19.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/t.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="19.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/s.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="19.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/sw.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="17.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/aur.png" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="90.0" layoutY="79.0" prefHeight="263.0" prefWidth="501.0" text="Tipo: computadora portatil, correo electrónico: correo01@correo.com,&#10;nombre de dispositivo: cp_01, visible: si&#10;&#10;Tipo: tablet, correo electrónico: correo01@correo.com,&#10;nombre de dispositivo: t_01, visible: si&#10;&#10;Tipo: smartphone, número de teléfono: 5555-0001,&#10;correo electrónico: correo01@correo.com,nombre de dispositivo: s_01, visible: si&#10;&#10;Tipo: smartwatch, correo electrónico: correo01@correo.com,&#10;nombre de dispositivo: sw_01, visible: si&#10;&#10;Tipo: auriculares, dispositivo asociado: sw_01  correo electrónico: correo01@correo.com,&#10;nombre de dispositivo: a_01, visible: " />
+   </children>
+</Pane>
