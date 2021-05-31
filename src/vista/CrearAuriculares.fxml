@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CrearAuricularesController">
+   <children>
+      <Label layoutX="23.0" layoutY="24.0" text="Crear Dispositivo">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="67.0" text="Seleccione dispositivo que desea crear:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <CubicCurve controlX1="-33.0" controlX2="208.0" controlY1="-29.0" controlY2="-29.0" endX="365.0" endY="-29.0" fill="DODGERBLUE" layoutX="211.0" layoutY="344.0" startX="-187.0" startY="-29.0" stroke="BLACK" />
+      <MenuButton layoutX="311.0" layoutY="62.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="246.0" text="Auriculares inalámbricos" />
+      <HBox alignment="CENTER_LEFT" layoutX="224.0" layoutY="116.0" prefHeight="21.0" prefWidth="300.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="224.0" layoutY="150.0" prefHeight="154.0" prefWidth="300.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="41.0" layoutY="114.0" text="Nombre del dispositivo:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="237.0" layoutY="339.0" mnemonicParsing="false" text="Guardar" />
+      <Button layoutX="313.0" layoutY="339.0" mnemonicParsing="false" text="Cancelar" />
+      <CubicCurve controlX1="-18.0" controlX2="199.0" controlY1="-253.0" controlY2="-253.0" endX="350.0" endY="-253.0" fill="DODGERBLUE" layoutX="221.0" layoutY="354.0" startX="-202.0" startY="-253.0" stroke="BLACK" />
+      <Label layoutX="13.0" layoutY="150.0" text="Dispositivo para sincronizar:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

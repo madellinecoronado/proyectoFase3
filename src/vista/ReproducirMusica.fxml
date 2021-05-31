@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="343.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ReproducirMusicaController">
+   <children>
+      <Label layoutX="23.0" layoutY="24.0" text="Reproducir Música">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <CubicCurve controlX1="-33.0" controlX2="208.0" controlY1="-29.0" controlY2="-29.0" endX="365.0" endY="-29.0" fill="DODGERBLUE" layoutX="209.0" layoutY="287.0" startX="-187.0" startY="-29.0" stroke="BLACK" />
+      <HBox alignment="CENTER_LEFT" layoutX="224.0" layoutY="84.0" prefHeight="21.0" prefWidth="300.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="33.0" layoutY="82.0" text="Nombre de la canción:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="225.0" layoutY="288.0" mnemonicParsing="false" text="Reproducir" />
+      <Button layoutX="309.0" layoutY="288.0" mnemonicParsing="false" text="Cancelar" />
+      <Label layoutX="89.0" layoutY="146.0" text="Reproducir en:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="218.0" layoutY="150.0" mnemonicParsing="false" text="Auriculares">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="218.0" layoutY="186.0" mnemonicParsing="false" text="Autoparlantes">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+   </children>
+</Pane>
