@@ -22,13 +22,13 @@
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <TableView layoutX="9.0" layoutY="40.0" prefHeight="259.0" prefWidth="734.0">
+                  <TableView fx:id="tblDispositivos" layoutX="9.0" layoutY="40.0" prefHeight="259.0" prefWidth="734.0">
                     <columns>
                       <TableColumn prefWidth="105.0" text="Identificador" />
                       <TableColumn prefWidth="121.0" text="Tipo" />
-                        <TableColumn prefWidth="114.0" text="Nombre" />
-                        <TableColumn prefWidth="165.0" text="Correo Electrónico" />
-                        <TableColumn prefWidth="139.0" text="Estado" />
+                        <TableColumn fx:id="colNombre" prefWidth="140.0" text="Nombre" />
+                        <TableColumn fx:id="colCorreo" prefWidth="196.0" text="Correo Electrónico" />
+                        <TableColumn prefWidth="171.0" text="Estado" />
                     </columns>
                   </TableView>
                   <Button fx:id="btnCrearDispositivo" layoutX="14.0" layoutY="316.0" mnemonicParsing="false" onAction="#crearDispositivo" text="Crear dispositivo" />
