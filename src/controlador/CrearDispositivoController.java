@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,9 +18,15 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.HBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import modelo.Dispositivo;
 
 
 public class CrearDispositivoController implements Initializable {
@@ -28,7 +35,18 @@ public class CrearDispositivoController implements Initializable {
     private MenuItem btncrearAuriculares;
     @FXML
     private Button btnCancelar;
+    @FXML
+    private TextField txtNombre;
+    @FXML
+    private TextField txtCorreo;
+    @FXML
+    private TextField txtTelefono;
+    @FXML
+    private Button btnGuardar;
 
+        private Dispositivo dispositivo;
+
+    private ObservableList<Dispositivo> dispositivos;
     /**
      * Initializes the controller class.
      */
@@ -36,7 +54,71 @@ public class CrearDispositivoController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    public void initAttributtes(ObservableList<Dispositivo> dispositivos) {
+        this.dispositivos = dispositivos;
+    }
 
+    public void initAttributtes(ObservableList<Dispositivo> dispositivos, Dispositivo d) {
+        this.dispositivos = dispositivos;
+        this.dispositivo = d;
+        // cargo los datos de el dispositivo
+        this.txtCorreo.setText(d.getCorreo());
+        this.txtNombre.setText(d.getNombre());
+
+    }
+ @FXML
+    private void guardar(ActionEvent event) {
+                String correo = this.txtCorreo.getText();
+        String nombre = this.txtNombre.getText();
+ 
+
+        // Creo el dispositivo
+        Dispositivo d = new Dispositivo(correo, nombre);
+        
+  
+                     if (!dispositivos.contains(d)) {
+
+            // Modificar
+            if (this.dispositivo != null) {
+
+                // Modifico el objeto
+                this.dispositivo.setCorreo(correo);
+                this.dispositivo.setNombre(nombre);
+             
+
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText(null);
+                alert.setTitle("Informacion");
+                alert.setContentText("Se ha modificado correctamente");
+                alert.showAndWait();
+
+            } else {
+                // insertando
+
+                this.dispositivo = d;
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText(null);
+                alert.setTitle("Informacion");
+                alert.setContentText("Se ha añadido correctamente");
+                alert.showAndWait();
+
+            }
+
+            // Cerrar la ventana
+            Stage stage = (Stage) this.btnGuardar.getScene().getWindow();
+            stage.close();
+        } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText("La persona ya existe");
+            alert.showAndWait();
+        }
+
+    }
+    
+ 
     @FXML
     private void crearAuriculares(ActionEvent event) {
         try {
@@ -76,5 +158,11 @@ public class CrearDispositivoController implements Initializable {
     Stage stage = (Stage) source.getScene().getWindow();
     stage.close();
     }
+
+    public Dispositivo getDispositivo() {
+        return dispositivo;
+    }
+   
+        
     
 }
