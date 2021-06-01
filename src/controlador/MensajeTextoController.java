@@ -14,8 +14,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
@@ -27,6 +29,8 @@ public class MensajeTextoController implements Initializable {
     private MenuItem btnMensajeriaInst;
     @FXML
     private MenuItem btnMensajeVideo;
+    @FXML
+    private Button btnCancelar;
 
     /**
      * Initializes the controller class.
@@ -135,6 +139,13 @@ public class MensajeTextoController implements Initializable {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
      
     }
+    }
+
+    @FXML
+    private void cancelar(ActionEvent event) {
+         Node source = (Node) event.getSource();
+    Stage stage = (Stage) source.getScene().getWindow();
+    stage.close();
     }
     
     

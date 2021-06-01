@@ -14,6 +14,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -40,6 +41,8 @@ public class AccionesController implements Initializable {
     private Button btnVerMensajes;
     @FXML
     private Button btnVerNotificaciones;
+    @FXML
+    private Button btnCerrar;
 
     /**
      * Initializes the controller class.
@@ -344,6 +347,13 @@ public class AccionesController implements Initializable {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
      
     }
+    }
+
+    @FXML
+    private void cerrar(ActionEvent event) {
+         Node source = (Node) event.getSource();
+    Stage stage = (Stage) source.getScene().getWindow();
+    stage.close();
     }
     
 }

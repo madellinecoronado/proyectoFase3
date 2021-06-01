@@ -32,7 +32,6 @@ public class Login implements Initializable {
     private TextField txtUser;
     @FXML
     private TextField txtPass;
-    private Label lblStatus;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -45,7 +44,6 @@ public class Login implements Initializable {
     private void ingresarOpciones (ActionEvent event) throws Exception{
         
         if (txtUser.getText().equals("admin") && txtPass.getText().equals("admin")){
-            lblStatus.setText("Exito");
            Stage stage = new Stage();
              Parent root = FXMLLoader.load(getClass().getResource("/vista/Opciones.fxml"));
         

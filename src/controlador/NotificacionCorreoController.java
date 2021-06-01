@@ -13,8 +13,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
@@ -22,6 +24,8 @@ public class NotificacionCorreoController implements Initializable {
 
     @FXML
     private MenuItem btnEvento;
+    @FXML
+    private Button btnCancelar;
 
     /**
      * Initializes the controller class.
@@ -62,6 +66,13 @@ public class NotificacionCorreoController implements Initializable {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
      
     }
+    }
+
+    @FXML
+    private void cancelar(ActionEvent event) {
+         Node source = (Node) event.getSource();
+    Stage stage = (Stage) source.getScene().getWindow();
+    stage.close();
     }
     
 }

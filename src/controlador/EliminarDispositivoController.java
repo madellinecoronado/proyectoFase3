@@ -7,10 +7,18 @@ package controlador;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 
 public class EliminarDispositivoController implements Initializable {
+
+    @FXML
+    private Button btnCancelar;
 
     /**
      * Initializes the controller class.
@@ -19,5 +27,12 @@ public class EliminarDispositivoController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void cancelar(ActionEvent event) {
+         Node source = (Node) event.getSource();
+    Stage stage = (Stage) source.getScene().getWindow();
+    stage.close();
+    }
     
 }
