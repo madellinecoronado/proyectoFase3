@@ -23,7 +23,7 @@
       </Label>
       <CubicCurve controlX1="-33.0" controlX2="208.0" controlY1="-29.0" controlY2="-29.0" endX="365.0" endY="-29.0" fill="DODGERBLUE" layoutX="211.0" layoutY="344.0" startX="-187.0" startY="-29.0" stroke="BLACK" />
       <Button layoutX="225.0" layoutY="339.0" mnemonicParsing="false" text="Reproducir" />
-      <Button layoutX="307.0" layoutY="339.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="btnCancelar" layoutX="307.0" layoutY="339.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
       <Button layoutX="280.0" layoutY="65.0" mnemonicParsing="false" text="Seleccionar carpeta" />
       <ImageView fitHeight="65.0" fitWidth="75.0" layoutX="72.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
          <image>

@@ -35,7 +35,7 @@
          </font>
       </Label>
       <Button layoutX="259.0" layoutY="277.0" mnemonicParsing="false" text="Enviar" />
-      <Button layoutX="320.0" layoutY="277.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="btnCancelar" layoutX="320.0" layoutY="277.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
       <CubicCurve controlX1="-18.0" controlX2="199.0" controlY1="-253.0" controlY2="-253.0" endX="350.0" endY="-253.0" fill="DODGERBLUE" layoutX="221.0" layoutY="354.0" startX="-202.0" startY="-253.0" stroke="BLACK" />
       <Label layoutX="155.0" layoutY="186.0" text="Fecha y hora:">
          <font>

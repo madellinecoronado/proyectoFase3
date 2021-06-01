@@ -31,6 +31,6 @@
          </font>
       </Label>
       <Button layoutX="245.0" layoutY="224.0" mnemonicParsing="false" text="Pegar" />
-      <Button layoutX="307.0" layoutY="224.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="btnCancelar" layoutX="307.0" layoutY="224.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
    </children>
 </Pane>

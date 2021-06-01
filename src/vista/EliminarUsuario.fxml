@@ -8,6 +8,6 @@
    <children>
       <Label layoutX="91.0" layoutY="43.0" prefHeight="17.0" prefWidth="248.0" text="¿Esta seguro de eliminar este usuario?" />
       <Button layoutX="110.0" layoutY="76.0" mnemonicParsing="false" text="Eliminar usuario" />
-      <Button layoutX="231.0" layoutY="76.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="btnCancelar" layoutX="231.0" layoutY="76.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
    </children>
 </Pane>

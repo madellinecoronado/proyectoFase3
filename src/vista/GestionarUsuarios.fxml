@@ -32,7 +32,7 @@
                     </columns>
                   </TableView>
                   <Button fx:id="btnCrearUsuario" layoutX="153.0" layoutY="405.0" mnemonicParsing="false" onAction="#crearUsuario" text="Crear Usuario" />
-                  <Button layoutX="476.0" layoutY="405.0" mnemonicParsing="false" text="Cancelar" />
+                  <Button fx:id="btnCancelar" layoutX="476.0" layoutY="405.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
                   <Button fx:id="btnModificarUsuario" layoutX="249.0" layoutY="405.0" mnemonicParsing="false" onAction="#modificarUsuario" text="Modificar Usuario" />
                   <Button fx:id="btnEliminarUsuario" layoutX="368.0" layoutY="405.0" mnemonicParsing="false" onAction="#eliminarUsuario" text="Eliminar usuario" />
                </children></AnchorPane>

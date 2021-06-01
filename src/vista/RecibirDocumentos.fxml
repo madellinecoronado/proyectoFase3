@@ -21,6 +21,6 @@
         </columns>
       </TableView>
       <Button fx:id="btnRecibirDoc" layoutX="204.0" layoutY="390.0" mnemonicParsing="false" onAction="#recibirDoc" text="Recibir documento" />
-      <Button layoutX="327.0" layoutY="390.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="btnCancelar" layoutX="327.0" layoutY="390.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
    </children>
 </Pane>

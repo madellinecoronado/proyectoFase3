@@ -32,7 +32,7 @@
          </font>
       </Label>
       <Button layoutX="231.0" layoutY="224.0" mnemonicParsing="false" text="Guardar" />
-      <Button layoutX="307.0" layoutY="224.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="btnCancelar" layoutX="307.0" layoutY="224.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
       <Button layoutX="220.0" layoutY="78.0" mnemonicParsing="false" text="Cargar archivo" />
    </children>
 </Pane>
